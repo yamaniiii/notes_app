@@ -1,5 +1,8 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'package:notesapp/views/widgets/Custom_note_item.dart';
 import 'package:notesapp/views/widgets/custom_appbar.dart';
+import 'package:notesapp/views/widgets/notes_list_view.dart';
 
 class NotesViewBody extends StatelessWidget {
   const NotesViewBody({super.key});
@@ -11,7 +14,8 @@ class NotesViewBody extends StatelessWidget {
       child: Column(
         children: const[
           SizedBox(height: 50,),
-          CustomAppbar(),
+          CustomAppbar( title: "Notes", icon: Icons.search, ),
+          Expanded(child: NotesListView()),
         ],
       ),
     );

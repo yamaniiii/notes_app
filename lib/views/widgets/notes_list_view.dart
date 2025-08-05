@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 
+import 'Custom_note_item.dart';
 import 'custom_appbar.dart';
 
 class NotesListView extends StatelessWidget {
